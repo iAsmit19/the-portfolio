@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+// Media query mixins
+@mixin desktop {
+  @media (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $bp-laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: $bp-phone) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: $bp-small) {
+    @content;
+  }
+}

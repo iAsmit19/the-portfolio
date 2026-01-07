@@ -1,5 +1,6 @@
-@import "variables";
-@import "coming-soon";
+@use "fonts";
+@use "variables" as *;
+@use "coming-soon";
 
 :root {
   color-scheme: dark;
@@ -17,9 +18,11 @@ body {
   height: 100%;
   background: $background;
   color: $text-primary;
-  font-family: $font;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+  list-style: none;
+}

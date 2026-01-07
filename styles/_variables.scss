@@ -3,10 +3,17 @@ $background: #181818;
 $text-primary: #fafafa;
 $text-secondary: #cacaca;
 $text-muted: #686868;
+$text-muted-l: #888888;
 
 // Font Family
+$font-l: "Helvetica Neue Light", sans-serif;
+$font-n: "Helvetica Neue", sans-serif;
+$font-m: "Helvetica Neue Medium", sans-serif;
+$font-b: "Helvetica Neue Bold", sans-serif;
 
-$font: "HelveticaNeue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif;
-
-  
+// Breakpoints
+$bp-desktop: 1280px; // large screens
+$bp-laptop: 1024px;  // laptops / small desktops
+$bp-tablet: 768px;   // tablets
+$bp-phone: 640px;    // phones
+$bp-small: 480px;    // small phones
