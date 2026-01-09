@@ -27,7 +27,7 @@ const Home = () => {
           />
         </header>
         <main className="coming-soon-page-body">
-          {/* <div className="c-s-page-panel-left">
+          <div className="c-s-page-panel-left">
             <div className="coming-soon-heading">
               <h1>
                 Coming <br /> Soon
@@ -62,10 +62,10 @@ const Home = () => {
               </div>
               <div className="about-me-text">
                 <p>
-                  I'm a UI/UX Designer; Evolving towards Product Design. Into
-                  creating Functional UI's & Micro Interactions. Currently
-                  learning the Video & Motion Design along with other Design
-                  Concepts.
+                  I'm a UI/UX Designer; Evolving towards Product <br /> Design.
+                  Into creating Functional UI's & Micro <br /> Interactions.
+                  Currently learning the Video & <br /> Motion Design along with
+                  other Design <br /> Concepts.
                 </p>
               </div>
             </div>
@@ -75,45 +75,58 @@ const Home = () => {
               </div>
               <div className="c-m-mail-contact">
                 <a href="mailto:iamasmit1919@gmail.com">
+                  <Image
+                    className="mail-icon"
+                    src="assets/images/email-arrow.svg"
+                    alt=""
+                    height={16}
+                    width={16}
+                  />
                   iamasmit1919@gmail.com
                 </a>
               </div>
               <div className="c-m-action-label">
-                <p>Open your mail app^</p>
+                <p>Opens your mail app ^</p>
               </div>
-              <div className="c-m-socials">
-                <div className="c-m-socials-heading">
-                  <h3>Socials</h3>
-                </div>
-                <div className="c-m-social-link-tags">
+            </div>
+            <div className="social-icons">
+              <div className="s-i-socials-heading">
+                <h3>Socials</h3>
+              </div>
+              <div className="s-i-social-link-tags">
+                <a href="javascript:void(0)" className="social-link-tag">
                   <Image
-                    className="social-link-behance"
+                    className="social-icon"
                     src="assets/images/behance-icon.svg"
                     alt=""
                     height={36}
                     width={36}
                     draggable={false}
                   />
+                </a>
+                <a href="javascript:void(0)" className="social-link-tag">
                   <Image
-                    className="social-link-behance"
+                    className="social-icon"
                     src="assets/images/linkedin-icon.svg"
                     alt=""
                     height={36}
                     width={36}
                     draggable={false}
                   />
+                </a>
+                <a href="javascript:void(0)" className="social-link-tag">
                   <Image
-                    className="social-link-behance"
+                    className="social-icon"
                     src="assets/images/x-twitter-icon.svg"
                     alt=""
                     height={36}
                     width={36}
                     draggable={false}
                   />
-                </div>
+                </a>
               </div>
             </div>
-          </div> */}
+          </div>
         </main>
         <footer className="coming-soon-page-footer">
           <div className="footer-heading">

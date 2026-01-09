@@ -1,6 +1,7 @@
 @use "variables" as *;
 
 .coming-soon-page-root {
+  user-select: none;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -40,6 +41,14 @@
       align-items: flex-start;
       padding-inline: 124px;
 
+      h3 {
+        color: $text-muted;
+        font-family: $font-m;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
       .c-s-page-panel-left {
         // border: 1px solid red;
 
@@ -51,7 +60,6 @@
         align-items: flex-start;
         gap: 64px;
         padding-top: 136px;
-
 
         .coming-soon-heading {
           h1 {
@@ -67,26 +75,11 @@
         .stage-index {
           // border: 1px solid blue;
 
-          .s-i-heading {
-            h3 {
-              color: $text-muted;
-              font-family: $font-m;
-              font-weight: 500;
-              font-size: 14px;
-              margin-bottom: 8px;
-            }
-          }
-
           .active-stage {
             color: $text-primary;
             font-family: $font-n;
             font-weight: 400;
             font-size: 24px;
-
-            &:hover {
-              transition: all ease-in-out 400ms;
-              font-weight: 600;
-            }
           }
 
           .inactive-stage {
@@ -99,12 +92,92 @@
       }
 
       .c-s-page-panel-right {
+        // border: 1px solid red;
+
         height: 100%;
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
+        gap: 48px;
+        padding-top: 136px;
+
+        .about-me {
+          .about-me-heading {
+            h2 {
+              color: $text-secondary;
+              font-size: 42px;
+              font-family: $font-l;
+              font-weight: 200;
+            }
+          }
+
+          .about-me-text {
+            p {
+              color: $text-secondary;
+              opacity: 0.8;
+              font-size: 18px;
+              font-family: $font-n;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .contact-me {
+          .c-m-mail-contact {
+            border-radius: 8px;
+            background-color: #212121;
+
+            a {
+              color: $text-secondary;
+              padding: 8px 18px;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 6px;
+              font-size: 18px;
+              font-family: $font-n;
+              font-weight: 400;
+              text-decoration: none;
+            }
+          }
+
+          .c-m-action-label {
+            p {
+              color: $text-muted-l;
+              font-size: 12px;
+              font-family: $font-n;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .social-icons {
+          .s-i-social-link-tags {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 18px;
+
+            .social-link-tag {
+              border-radius: 8px;
+              background-color: #212121;
+              padding: 6px;
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              transition: all $anim-fast ease-in-out;
+
+              &:hover {
+                background-color: #484848;
+                transition: all 400ms ease-in-out;
+              }
+            }
+          }
+        }
       }
     }
 
