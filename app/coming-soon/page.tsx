@@ -6,7 +6,7 @@ import Snowfall from "react-snowfall";
 const Home = () => {
   return (
     <div className="coming-soon-page-root">
-      <Snowfall />
+      <Snowfall radius={[0.5, 1]} />
 
       <Image
         className="background-gradient"
