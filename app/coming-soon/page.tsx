@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import Snowfall from "react-snowfall";
 
 const Home = () => {
   return (
     <div className="coming-soon-page-root">
+      <Snowfall />
+
       <Image
         className="background-gradient"
         src="assets/images/coming_soon_background.svg"
@@ -25,7 +30,7 @@ const Home = () => {
           {/* <div className="c-s-page-panel-left">
             <div className="coming-soon-heading">
               <h1>
-                Coming Soon
+                Coming <br /> Soon
                 <Image
                   className="infinite-sign"
                   src="assets/images/infinite_sign.svg"
